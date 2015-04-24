@@ -29,7 +29,11 @@
 
 static const char *usb_strings[] = {
 	"",
+#ifdef BOARD_AEROCORE 
+	"Gumstix",
+#else
 	"3D Robotics",
+#endif
 	USBDEVICESTRING,
 	"0",
 };
